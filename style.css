@@ -1,0 +1,481 @@
+/*****
+#222030  Major bg
+#001523  Minor bg
+#ffffff  Major text
+#b3b3b3  Minor text
+******/
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    user-select: none;
+    font-family: monospace;
+}
+/**********************************************************/
+
+center >h4{
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+center > h5{
+    color: #b3b3b3;
+    font-size: 120%;
+}
+
+.sidebar{
+    background-color: #001523;
+    color: white;
+    margin-bottom: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pfp{
+    width: 200px;
+    border-radius: 50%;
+    margin: 80px 0px 30px 0px;
+}
+
+.sm_links{
+    margin-top: 40px;
+}
+
+.smlogo{
+    width: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.maillogo{
+    width: 20px;
+}
+
+.info{
+    color: #fffff1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.info >span{
+    margin-left: 5px;
+}
+
+.info img{
+    width: 19px;
+}
+
+main{
+    margin-left: 250px;
+}
+
+main > center > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    background-color: #222030;
+    color: #fffff1;
+    padding: 20px;
+    font-size: 20px;
+}
+
+main > center > ul > li{
+    cursor: pointer;
+}
+
+.nav>li>a{
+    transition: 0.5s;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+}
+.nav>li>a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.nav>li>a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.maincontent{
+    background-color: #222030;
+    color: #fffff1;
+    padding: 2% 5%;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.about >h4{
+    font-size: 35px;
+    padding: 0px 5px;
+    margin: 0px 0px 20px 0px;
+    border-bottom: solid 5px #fffff1;
+}
+
+.about > h6{
+    font-size: 23px;
+}
+
+.about > p{
+    text-align: left;
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
+}
+
+.techstack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.techstack >h4{
+    font-size: 35px;
+    padding: 0px 5px;
+    margin: 0px 0px 20px 0px;
+    border-bottom: solid 5px #fffff1;
+}
+
+.techgrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.techgrid > img{
+    display: inline-block;
+    width: 75px;
+    padding: 5px;
+    border: 2px solid #fffff1;
+    border-radius: 5%;
+    background-color: #fffff1;
+    transition: 0.5s;
+}
+
+.techgrid > img:hover{
+    background-color: #001523;
+    border: #b3b3b3 solid 2px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.projects > h4{
+    font-size: 35px;
+    padding: 0px 5px;
+    margin: 0px 0px 20px 0px;
+    border-bottom: solid 5px #fffff1;
+}
+
+.projectsdiv{
+    display: flex;
+    margin: 0px 0px 20px 0px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #001523;
+    width: 20%;
+    margin: 5px 12px 0 0;
+    border: #b3b3b3 solid 2px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: 0.5s ease-out;
+}
+
+.project > p{
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.project h6{
+    font-size: 20px;
+}
+
+.project:hover{
+    background-color: #fffff1;
+    color: #222030;
+}
+
+.designs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 0px 25px 0px;
+}
+
+.designs > h4{
+    font-size: 35px;
+    padding: 0px 5px;
+    margin: 0px 0px 20px 0px;
+    border-bottom: solid 5px #fffff1;
+}
+
+.designdiv{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 20px;
+}
+
+.designimages{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 0px;
+}
+
+.design{
+    margin: 0%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.contactme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 0px 20px 0px;
+}
+
+.contactme > h4{
+    font-size: 35px;
+    padding: 0px 5px;
+    margin: 0px 0px 20px 0px;
+    border-bottom: solid 5px #fffff1;
+}
+
+
+input[type=text], select, textarea {
+    width: 200%;
+    padding: 12px;
+    border: 2px solid #b3b3b3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #001523;
+}
+
+input[type=text], select, textarea:focus{
+    outline: none;
+    color: #fffff1;
+}
+
+input[type=submit] {
+    background-color: #001523;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    border: #b3b3b3 solid 2px;
+}
+
+input[type=submit]:hover{
+    background-color: #fffff1;
+    color: #001523;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #fffff1;
+    padding: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > p{
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.madewithlove{
+    background-color: #001523;
+    color: #fffff1;
+}
+
+/***************Responsive****************/
+@media screen and (max-width: 800px) {
+    .designimages {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .designimages {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 915px){
+    .projectsdiv{
+        flex-direction: column;
+    }
+    .project{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .techgrid > img{
+        display: inline-block;
+        width: 75%;
+        padding: 5px;
+        border: 2px solid #fffff1;
+        border-radius: 5%;
+        background-color: #fffff1;
+        transition: 0.5s;
+    }
+
+    .about >h4{
+        font-size: 25px;
+        padding: 0px 2px;
+        margin: 0px 0px 17px 0px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .techstack >h4{
+        font-size: 25px;
+        padding: 0px 2px;
+        margin: 0px 0px 17px 0px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .projects > h4{
+        font-size: 25px;
+        padding: 0px 2px;
+        margin: 0px 0px 17px 0px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .contactme > h4{
+        font-size: 25px;
+        padding: 0px 2px;
+        margin: 0px 0px 17px 0px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .designs > h4{
+        font-size: 25px;
+        padding: 0px 2px;
+        margin: 0px 0px 17px 0px;
+        border-bottom: solid 4px #fffff1;
+    }
+
+    input[type=text], select, textarea {
+        width: 150%;
+        padding: 12px;
+        border: 2px solid #b3b3b3;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        background-color: #001523;
+    }
+    .project{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 575px){
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #b3b3b3;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        background-color: #001523;
+    }
+    .about > h6{
+        font-size: 18px;
+    }
+    
+    .about > p{
+        text-align: left;
+        font-size: 14px;
+        margin: 0px 0px 14px 0px;
+    }
+}
+
+
+/***For Phone***/
+
+
+@media screen and (max-width: 465px){
+    
+    .sidebar{
+        background-color: #001523;
+        color: white;
+        top:0;
+        position: relative;
+        width: 100%;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0%;
+    }
+    main{
+        margin-left: 0px;
+        margin-top:0;
+    }
+}
