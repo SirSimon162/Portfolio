@@ -450,11 +450,30 @@ form > p{
     .about > h6{
         font-size: 18px;
     }
-    
     .about > p{
         text-align: left;
         font-size: 14px;
         margin: 0px 0px 14px 0px;
+    }
+    .about >h4{
+        font-size: 20px;
+        border-bottom: solid 2.5px #fffff1;
+    }
+    .techstack >h4{
+        font-size: 20px;
+        border-bottom: solid 2.5px #fffff1;
+    }
+    .projects > h4{
+        font-size: 20px;
+        border-bottom: solid 2.5px #fffff1;
+    }
+    .contactme > h4{
+        font-size: 20px;
+        border-bottom: solid 2.5px #fffff1;
+    }
+    .designs > h4{
+        font-size: 20px;
+        border-bottom: solid 2.5px #fffff1;
     }
 }
 
@@ -481,5 +500,28 @@ form > p{
     }
     .maincontent{
         padding-top: 30px;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+    }
+    .about >h4{
+        font-size: 25px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .techstack >h4{
+        font-size: 25px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .projects > h4{
+        font-size: 25px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .contactme > h4{
+        font-size: 25px;
+        border-bottom: solid 4px #fffff1;
+    }
+    .designs > h4{
+        font-size: 25px;
+        border-bottom: solid 4px #fffff1;
     }
 }
