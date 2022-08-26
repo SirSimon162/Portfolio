@@ -263,8 +263,8 @@ main > center > ul > li{
 }
 
 .designimages{
-    flex: 25%;
-    max-width: 25%;
+    flex: 20%;
+    max-width: 20%;
     padding: 0 0px;
 }
 
@@ -348,11 +348,11 @@ form > p{
 
 /***************Responsive****************/
 @media screen and (max-width: 800px) {
-    .designimages {
-      flex: 50%;
-      max-width: 50%;
+    .designimages{
+        flex: 40%;
+        max-width: 100%;
     }
-  }
+}
 
 @media screen and (max-width: 600px) {
     .designimages {
