@@ -182,7 +182,7 @@ main > center > ul > li{
     padding: 5px;
     border: 2px solid #fffff1;
     border-radius: 5%;
-    background-color: #fffff1;
+    background-color: #001523;
     transition: 0.5s;
 }
 
@@ -263,8 +263,8 @@ main > center > ul > li{
 }
 
 .designimages{
-    flex: 20%;
-    max-width: 20%;
+    flex: 25%;
+    max-width: 25%;
     padding: 0 0px;
 }
 
